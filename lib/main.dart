@@ -17,11 +17,12 @@ class AgeCheckerApp extends StatelessWidget {
 }
 
 class AgeCheckerScreen extends StatefulWidget {
+  const AgeCheckerScreen({super.key});
   @override
-  _AgeCheckerScreenState createState() => _AgeCheckerScreenState();
+  AgeCheckerScreenState createState() => AgeCheckerScreenState();
 }
 
-class _AgeCheckerScreenState extends State<AgeCheckerScreen> {
+class AgeCheckerScreenState extends State<AgeCheckerScreen> {
   final TextEditingController _nameController = TextEditingController();
   final TextEditingController _ageController = TextEditingController();
   String _result = "";
